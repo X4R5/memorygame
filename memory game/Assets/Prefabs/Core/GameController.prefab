@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5799450959027188514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5799450959027188512}
+  - component: {fileID: 5799450959027188515}
+  - component: {fileID: 5799450959027188513}
+  - component: {fileID: 5799450959027188518}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5799450959027188512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799450959027188514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 752.74915, y: 1783.171, z: -70.5734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5799450959027188515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799450959027188514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b35f995d7906f241873e81c7e8f49a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleField: {fileID: 0}
+  preLevelPanel: {fileID: 0}
+  cardCount: 18
+  difference: 1
+  buttonPref: {fileID: 6522103281924326741, guid: a05615fa1c0d28a4986c7bb8217dec22, type: 3}
+  equalSign: {fileID: 3567425557572615402, guid: d9ed31d2a5ed8ae4c8411b79459c216d, type: 3}
+  textPref: {fileID: 2062959631276192552, guid: 3f8a8052847e3ea42a9b285547caf9e0, type: 3}
+  timeRemainingText: {fileID: 0}
+--- !u!114 &5799450959027188513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799450959027188514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f4e98bb2564b54d92de9d0bd94fd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matchedText: {fileID: 0}
+  grids: {fileID: 0}
+  textPref: {fileID: 2062959631276192552, guid: 3f8a8052847e3ea42a9b285547caf9e0, type: 3}
+  btns: []
+  bgImage: {fileID: 21300000, guid: f8f0cfaebe4448e45be1cf8d401da8c5, type: 3}
+  puzzles: []
+  randomPuzzles: []
+  gamePuzzlesToShow: []
+  gamePuzzlesToCheck: []
+  differencesInPuzzles: []
+  differencesInRandom: []
+  randomNumbers: 
+  randomNumberIndexes: 
+  preLevelPanel: {fileID: 0}
+  levelClearedPanel: {fileID: 0}
+  click: {fileID: 8300000, guid: f2d29ca15f5c0564a89987cdfbd81aae, type: 3}
+  useNumbersForRandomMatch: 0
+--- !u!114 &5799450959027188518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5799450959027188514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31713025392a9cb4e94d56122122c40d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  time: 60
+  gameOverPanel: {fileID: 0}
