@@ -14,9 +14,9 @@ public class Counter : MonoBehaviour
     public int xv;
     bool load;
 
-    private void Awake()
+    private void Start()
     {
-        time = 60f;
+        //time = 60f;
         xv = 0;
         load = true;
         Instance = this;
@@ -39,19 +39,22 @@ public class Counter : MonoBehaviour
             //    heartCount--;
             //    PlayerPrefs.SetInt("Heart", heartCount);
             //}
-            if(load && heartCount == 1)
+            if(load && PlayerPrefs.GetInt("Heart") < 2)
             {
-                AdsManager.Instance.LoadRewardedAd();
+                AdsManager.Instance.LoadRewardedAd(true);
+                GameObject.Find("s").transform.GetChild(0).GetComponent<TMP_Text>().text += " go";
                 load = false;
                 //reklam izletilecek
                 //PlayerPrefs.SetInt("Heart", heartCount);
             }
             else if(load)
             {
-                heartCount--;
-                PlayerPrefs.SetInt("Heart", heartCount);
+                GameObject.Find("s").transform.GetChild(0).GetComponent<TMP_Text>().text += " go";
+                PlayerPrefs.SetInt("Heart", PlayerPrefs.GetInt("Heart") - 1);
+                AdsManager.Instance.LoadRewardedAd(false);
                 load = false;
             }
+            load = false;
             Debug.Log("Game Finished");
         }
 

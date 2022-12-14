@@ -9,8 +9,16 @@ public class Settings : MonoBehaviour
     public GameObject soundButton;
     [SerializeField] Sprite[] soundSprites;
     [SerializeField] Sprite greenHeartSprite;
+    private void Awake()
+    {
+        if(PlayerPrefs.GetInt("Level") == 0)
+        {
+            PlayerPrefs.SetInt("Level", 1);
+        }
+    }
     private void Start()
     {
+        
         soundButton = GameObject.Find("SoundButton");
         var a = PlayerPrefs.GetInt("PlaySound") == 1 ? 1 : 0;
         if(SceneManager.GetActiveScene().name != "Levels") soundButton.GetComponent<Button>().image.sprite = soundSprites[a];
@@ -61,5 +69,10 @@ public class Settings : MonoBehaviour
         var a = PlayerPrefs.GetInt("Level");
         
         SceneManager.LoadScene((a).ToString());
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

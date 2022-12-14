@@ -231,6 +231,7 @@ public class GameController : MonoBehaviour
                 PlayerPrefs.SetInt("Level", b + 1);
             }
             levelClearedPanel.SetActive(true);
+            AdsManager.Instance.LoadRewardedAd(false);
             Counter.Instance.xv = 15;
         }
     }

@@ -462,6 +462,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 198066126}
     - target: {fileID: 5799450959027188518, guid: f72a6bb9db0d0eb48978e361e5fd229f, type: 3}
+      propertyPath: time
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799450959027188518, guid: f72a6bb9db0d0eb48978e361e5fd229f, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 198066119}

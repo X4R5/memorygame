@@ -455,7 +455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MatcH
+  m_text: XARS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a2a0ab319408d24aba369a591d76273, type: 2}
   m_sharedMaterial: {fileID: -1789732792227582693, guid: 1a2a0ab319408d24aba369a591d76273, type: 2}
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UltrA
+  m_text: DEMO OYUNDUR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a2a0ab319408d24aba369a591d76273, type: 2}
   m_sharedMaterial: {fileID: -1789732792227582693, guid: 1a2a0ab319408d24aba369a591d76273, type: 2}
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 137.55
+  m_fontSize: 81.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
